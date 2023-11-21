@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On Off</title>
+
+    <script>
+        function changeImage()
+        {
+            var image=document.getElementById('myImage');
+            if (image.src.match("pic_bulbon.png"))
+            {
+                image.src="pic_bulboff.png";
+            }
+            else
+            {
+                image.src="pic_bulbon.png";
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <img id="myImage" onclick="changeImage()" src="pic_bulboff.png" width="320" height="500">
+    </center>
+</body>
+</html>
